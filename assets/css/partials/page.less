@@ -1,0 +1,38 @@
+@import "../extended/mixins.less";
+@import "../extended/library.less";
+
+
+.page-content {
+    margin-left: 250px;
+    margin-top: 0;
+    padding: 0;
+    overflow: auto;
+    position: relative;
+
+
+    & .content {
+    	padding-left: 26px;
+		padding-right: 26px;
+		padding-top: 72px;
+    }
+
+    & .page-title {
+
+        margin-bottom: 20px;
+        
+        & h3 {
+            display: inline-block;
+            width:80%;
+            margin: 0;
+        }
+
+        & .fa {
+            font-size: 28px;
+            display: inline-block;
+            margin-right: 5px;
+            top:2px;
+            position: relative;
+        }
+
+    }
+}

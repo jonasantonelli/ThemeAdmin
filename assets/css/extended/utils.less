@@ -1,0 +1,125 @@
+@import "extended/library.less";
+
+/*
+ -------------------------------------------
+ Classes Auxiliares    
+ -------------------------------------------
+*/
+
+/* Utils */
+
+.block, .show{
+
+    display: block !important;
+}
+.none, .hide {
+    display: none !important;
+}
+.bold {
+    font-weight: @bold;
+}
+.light {
+    font-weight: @light;    
+}
+.normal {
+ font-weight: @normal;   
+}
+
+
+
+
+/* Borders */
+
+.b-b { border-bottom: @border-width solid @border-color;}
+.b-t { border-top: @border-width solid @border-color;}
+.b-l { border-left: @border-width solid @border-color;}
+.b-r { border-right: @border-width solid @border-color;}
+.no-borders { border-width:0;}
+
+
+/* Margin */
+.m-t {margin-top:@margin-top}
+.m-b {margin-bottom:@margin-bottom}
+.m-l {margin-left:@margin-left}
+.m-r {margin-right:@margin-right}
+
+
+/* Padding */
+.p-t {padding-top:@padding-top}
+.p-b {padding-bottom:@padding-bottom}
+.p-l {padding-left:@padding-left}
+.p-r {padding-right:@padding-right}
+
+
+
+
+
+
+/* Background */
+.bg-dark-primary { background:@bg-dark-primary; }
+.bg-dark-secundary {background:@bg-dark-secundary; }
+
+.bg-light-primary { background:@bg-light-primary; }
+.bg-light-secundary {background:@bg-light-secundary; }
+
+
+/*Color*/
+.color-inverse { color:@color-inverse;}
+.color {color:@color;}
+
+
+
+/* Icon */
+.fa {
+    color:@icon-color;
+}
+
+
+/* Text */
+.text-right { text-align:right; }
+.text-left { text-align:left; }
+.text-center { text-align:center; }
+.text-primary {color: @color}
+.text-secundary {color: @color-inverse}
+.text-xs { font-size:10px;}
+.text-sm { font-size: 11px;}
+.text-md {font-size: 13px;}
+.text-lg {font-size: 17px;}
+.text-xl { font-size: 19px;}
+
+
+/* Variationts */
+.badge-success {
+    background-color: @green;
+}
+.badge-warning{
+    background-color:@yellow;
+}
+.badge-info{
+    background-color:@blue;
+}
+.badge-danger{
+    background-color:@red;
+}
+.badge-primary{
+    background-color:@light-blue;
+}
+
+
+
+/* Text */
+.text-default{
+    color:@grey;
+}
+.text-success {
+    color:@green;
+}
+.text-warning {
+    color:@yellow;
+}
+.text-info {
+    color:@blue;
+}
+.text-danger {
+    color:@red;
+}

@@ -1,0 +1,446 @@
+<!--BEGIN HEADER-->
+<header class="header navbar navbar-fixed-top navbar-inverse">
+
+    <div class="navbar-inner">
+
+        <div class="header-sidebar sidebar-left">
+            <a href="index.html" class="logo ">Logo <span>Tipo</span>
+                </a>
+        </div>
+
+        <div class="header-quick-nav">
+
+            <!-- Menu Collapsed -->
+            <div class="pull-left">
+                <!-- Menu Sidebar -->
+                <a href class="action-collapse collapse-sidebar">
+                    <i class="fa fa-bars fa-lg"></i> 
+                </a>
+
+                <!-- MENU COLLAPSE HEADER -->
+                <div class="menu-sidebar-float">
+
+
+                    <ul class="nav">
+
+                        <li>
+                              <a href class=" collapse-sidebar">
+                        <i class="fa fa-bars fa-lg"></i> 
+                    </a></li>
+
+                        <li ui-sref-active="active">
+                            <a href ui-sref="dashboard">
+                                <i class="fa fa-home pull-left"></i>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href>
+                                <i class="fa fa-ticket pull-left"></i>
+                                <span class="title">Frontend</span>
+                            </a>
+                        </li>
+
+                        <li ui-sref-active="active">
+                            <a ui-sref="email" href>
+                                <span class="badge pull-right">2</span>
+                                <i class="fa fa-envelope"></i>
+                                <span class="title">Email</span>
+                            </a>
+                        </li>
+
+                        <li class="collapse-menu" ui-sref-active="active">
+                            <a href >
+                                <i class="fa fa-outdent pull-left"></i>
+                                <i class="fa fa-angle-right pull-right"></i>
+                                <span class="title">Forms</span>
+                            </a>
+                            <ul class="collapse-submenu">
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="forms.elements">Elements</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="forms.validations">Validations</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="collapse-menu" ui-sref-active="active">
+                            <a href >
+                                <i class="fa fa-puzzle-piece pull-left"></i>
+                                <i class="fa fa-angle-right pull-right"></i>
+                                <span class="title">UI Elements</span>
+                            </a>
+                            <ul class="collapse-submenu">
+                                <li ui-sref-active="active"><a href ui-sref="ui.typography">Typography</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="ui.messages">Messages & Notifications</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="ui.notifications">Notifications</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="ui.icons">Icons</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="ui.buttons">Buttons</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="ui.tabs">Tabs & Accordions</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="ui.sliders">Sliders</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="ui.group">Group List</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="collapse-menu" ui-sref-active="active">
+                            <a href >
+                                <i class="fa fa-columns pull-left"></i>
+                                <i class="fa fa-angle-right pull-right"></i>
+                                <span class="title">Panel</span>
+                            </a>
+                            <ul class="collapse-submenu">
+                                <li ui-sref-active="active"><a href ui-sref="panel.simple">Simple</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="panel.draggable">Draggable</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="collapse-menu" ui-sref-active="active">
+                            <a href>
+                                <i class="fa fa-th pull-left"></i>
+                                <i class="fa fa-angle-right pull-right"></i>
+                                <span class="title">Tables</span>
+                            </a>
+                            <ul class="collapse-submenu">
+                                <li ui-sref-active="active"><a href ui-sref="tables.basic">Basic Tables</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="tables.datatables">Data Tables</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="collapse-menu" ui-sref-active="active">
+                            <a href>
+                                <i class="fa fa-map-marker pull-left"></i>
+                                <i class="fa fa-angle-right pull-right"></i>
+                                <span class="title">Maps</span>
+                            </a>
+                            <ul class="collapse-submenu">
+                                <li ui-sref-active="active"><a href ui-sref="maps.google">Google Maps</a>
+                                </li>
+                                <li ui-sref-active="active"><a href ui-sref="maps.vector">Vector Maps</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li ui-sref-active="active">
+                            <a href ui-sref="charts">
+                                <i class="fa fa-bar-chart-o pull-left"></i>
+                                <span class="title">Charts</span>
+                            </a>
+                        </li>
+
+                        <li class="collapse-menu" ui-sref-active="active">
+                            <a href >
+                                <i class="fa fa-briefcase pull-left"></i>
+                                <i class="fa fa-angle-right pull-right"></i>
+                                <span class="title">Extra</span>
+                            </a>
+                            <ul class="collapse-submenu">
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.blank">Blank Page</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.look">Lock Screen</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.profile">Profile</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.invoice">Invoice</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.pricing">Pricing Table</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.timeline">Timeline</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.media">Media Gallery</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.404">404 Error</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.500">500 Error</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a href ui-sref="extra.registration">Registration</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+            <!-- Search -->
+            <div class="pull-left">
+                <div class="search-form">
+                    <i class="fa fa-search">&nbsp;</i>
+                    <input type="text" placeholder="Quick Search" class="no-borders" />
+                </div>
+
+            </div>
+
+            <div class="pull-right">
+
+                <!-- NOTIFICATION !-->
+                <ul class="nav notification">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle color" data-toggle="dropdown" data-close-other="true">
+                            <i class="fa fa-home"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="top">
+                                <p>You have 6 pending tasks</p>
+                            </li>
+
+                            <li>
+                                <ul class="dropdown-menu-list scroller" style="overflow: hidden; outline: none;" tabindex="5003">
+                                    <li>
+                                        <a href="#">
+                                            <span class="task">
+                                                <span class="desc">Procurement</span>
+                                                <span class="percent">27%</span>
+                                            </span>
+
+                                            <span class="progress">
+                                                <span style="width: 27%;" class="progress-bar progress-bar-success">
+                                                    <span class="sr-only">27% Complete</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="task">
+                                                <span class="desc">App Development</span>
+                                                <span class="percent">83%</span>
+                                            </span>
+
+                                            <span class="progress progress-striped">
+                                                <span style="width: 83%;" class="progress-bar progress-bar-danger">
+                                                    <span class="sr-only">83% Complete</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="task">
+                                                <span class="desc">HTML Slicing</span>
+                                                <span class="percent">91%</span>
+                                            </span>
+
+                                            <span class="progress">
+                                                <span style="width: 91%;" class="progress-bar progress-bar-success">
+                                                    <span class="sr-only">91% Complete</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="task">
+                                                <span class="desc">Database Repair</span>
+                                                <span class="percent">12%</span>
+                                            </span>
+
+                                            <span class="progress progress-striped">
+                                                <span style="width: 12%;" class="progress-bar progress-bar-warning">
+                                                    <span class="sr-only">12% Complete</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="task">
+                                                <span class="desc">Backup Create Progress</span>
+                                                <span class="percent">54%</span>
+                                            </span>
+
+                                            <span class="progress progress-striped">
+                                                <span style="width: 54%;" class="progress-bar progress-bar-info">
+                                                    <span class="sr-only">54% Complete</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="task">
+                                                <span class="desc">Upgrade Progress</span>
+                                                <span class="percent">17%</span>
+                                            </span>
+
+                                            <span class="progress progress-striped">
+                                                <span style="width: 17%;" class="progress-bar progress-bar-important">
+                                                    <span class="sr-only">17% Complete</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="external">
+                                <a href="#">See all tasks</a>
+                            </li>
+                            <div id="ascrail2003" class="nicescroll-rails" style="padding-right: 3px; width: 10px; z-index: 1000; cursor: default; position: absolute; top: 43px; left: 359px; height: 290px; display: block; opacity: 0;">
+                                <div style="position: relative; top: 0px; float: right; width: 5px; height: 242px; background-color: rgb(212, 212, 212); border: 1px solid rgb(204, 204, 204); background-clip: padding-box; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px;"></div>
+                            </div>
+                            <div id="ascrail2003-hr" class="nicescroll-rails" style="height: 7px; z-index: 1000; top: 326px; left: 1px; position: absolute; cursor: default; display: none; width: 358px; opacity: 0;">
+                                <div style="position: relative; top: 0px; height: 5px; width: 368px; background-color: rgb(212, 212, 212); border: 1px solid rgb(204, 204, 204); background-clip: padding-box; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px;"></div>
+                            </div>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-other="true">
+                            <i class="fa fa-envelope"></i>
+                            <span class="badge badge-danger animated bounceIn">2</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <ul class="dropdown-menu-list scroller" style="overflow: hidden; outline: none;" tabindex="5002">
+                                    <li class="active">
+                                        <a href="#">
+                                            <span class="image pull-right">
+                                                <img src="http://themes.laborator.co/neon/assets/images/thumb-1.png" alt="" class="img-circle">
+                                            </span>
+
+                                            <span class="line">
+                                                <strong>Luc Chartier</strong>
+                                                - yesterday
+                                            </span>
+
+                                            <span class="line desc small">This ain’t our first item, it is the best of the rest.
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="active">
+                                        <a href="#">
+                                            <span class="image pull-right">
+                                                <img src="http://themes.laborator.co/neon/assets/images/thumb-2.png" alt="" class="img-circle">
+                                            </span>
+
+                                            <span class="line">
+                                                <strong>Salma Nyberg</strong>
+                                                - 2 days ago
+                                            </span>
+
+                                            <span class="line desc small">Oh he decisively impression attachment friendship so if everything.
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="image pull-right">
+                                                <img src="http://themes.laborator.co/neon/assets/images/thumb-3.png" alt="" class="img-circle">
+                                            </span>
+
+                                            <span class="line">Hayden Cartwright - a week ago
+                                            </span>
+
+                                            <span class="line desc small">Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="image pull-right">
+                                                <img src="http://themes.laborator.co/neon/assets/images/thumb-4.png" alt="" class="img-circle">
+                                            </span>
+
+                                            <span class="line">Sandra Eberhardt - 16 days ago
+                                            </span>
+
+                                            <span class="line desc small">On so attention necessary at by provision otherwise existence direction.
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="external">
+                                <a href="http://themes.laborator.co/neon/mailbox/main/">All Messages</a>
+                            </li>
+                            <div id="ascrail2002" class="nicescroll-rails" style="padding-right: 3px; width: 10px; z-index: 1000; cursor: default; position: absolute; top: 0px; left: -10px; height: 0px; display: none; opacity: 0;">
+                                <div style="position: relative; top: 0px; float: right; width: 5px; height: 0px; background-color: rgb(212, 212, 212); border: 1px solid rgb(204, 204, 204); background-clip: padding-box; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px;"></div>
+                            </div>
+                            <div id="ascrail2002-hr" class="nicescroll-rails" style="height: 7px; z-index: 1000; top: -7px; left: 0px; position: absolute; cursor: default; display: none; opacity: 0;">
+                                <div style="position: relative; top: 0px; height: 5px; width: 0px; background-color: rgb(212, 212, 212); border: 1px solid rgb(204, 204, 204); background-clip: padding-box; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; left: 0px;"></div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <!--PROFILE -->
+                <ul class="nav profile ">
+
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-placement="bottom" data-toggle="dropdown">
+
+                            <!--DETAILS-->
+                            <div class="details">
+                                <div class="username">
+                                    Jonas
+                                    <span class="bold">Antonelli</span>
+                                </div>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+
+                            <!--PICTURES-->
+                            <div class="picture">
+                                <img src="published/images/profiles/profile-small.jpg" alt="" data-src="published/images/profiles/profile-small.jpg" width="35" height="35">
+                            </div>
+
+                        </a>
+
+                        <!--OPTIONS-->
+                        <ul class="dropdown-menu " role="menu" aria-labelledby="user-options">
+                            <li><a title="My Account" href="user-profile.html">My Account</a>
+                            </li>
+                            <li><a href="calender.html">My Calendar</a>
+                            </li>
+                            <li><a href="email.html">My Inbox&nbsp;&nbsp;<span class="badge badge-danger animated bounceIn">2</span></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+</header>

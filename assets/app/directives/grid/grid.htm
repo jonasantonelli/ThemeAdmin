@@ -1,0 +1,15 @@
+<div class="grid" ng-class="type">
+	
+	<div class="grid-title">
+		<h4 ng-bind-html="title"></h4>
+		
+		<div class="tools">
+		    <a href class="collapse"><i class="fa fa-chevron-down"></i></a>
+		    <a href class="remove"><i class="fa fa-times"></i></a>
+		</div>
+	</div>
+
+	<div class="grid-body" ng-bind-html="body" ng-class="{'slimscroll-grid': scroll}">		
+	</div>
+
+</div>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html ng-app="ThemeApp" >
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <title ng-bind="'Theme - ' + $state.current.name">Theme</title>
+
+    <!-- BEGIN CORE CSS -->
+    <link href="published/css/core.css" rel="stylesheet">
+    <!-- END CORE CSS --> 
+
+    <!-- <link href="published/css/theme.css" rel="stylesheet" > -->
+    <link href="css/style.css" rel="stylesheet" >
+
+    <!-- PLUGINS -->
+    <link href="plugins/switchery/switchery.css" rel="stylesheet" >
+    <link href="plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" >
+
+
+
+    <!-- BEGIN ANGULAR APP CSS -->
+    <!-- <link href="published/css/angular-app.css" rel="stylesheet"> -->
+
+        <!-- Directives -->
+        <link href="app/directives/grid/grid.css" rel="stylesheet">
+    <!-- END TEMPLATE CSS !-->
+
+    <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+
+    
+
+</head>
+
+
+
+<body >
+
+    <!-- Default Header -->
+    <div ui-view="header"></div>
+
+    <!-- Container -->
+    <section class="page-container">
+        
+        <!-- Sidebar Left -->
+        <div ui-view="sidebarLeft" class="page-sidebar page-sidebar-left"></div>
+
+        <!-- Content -->
+        <div ui-view="content" class="page-content"></div>
+
+        <!-- Sidebar Right -->
+        <div ui-view="sidebarRight" ></div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- BEGIN CORE JS -->    
+    <script type="text/javascript" src="published/js/core.js"></script>    
+    <!-- END CORE JS -->
+            
+    <!-- BEGIN PLUGINS -->    
+    <script type="text/javascript" src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- END PLUGINS -->
+
+    <!-- BEGIN UTILS -->    
+    <script type="text/javascript" src="app/utils/utils.js"></script>     
+    <!-- END UTILS -->
+    
+    <!-- BEGIN ANGULAR JS !-->    
+    <script type="text/javascript" src="published/js/angular.js"></script>
+    <!-- END ANGULAR JS -->
+
+    <!-- BEGIN ANGULAR PLUGIN -->
+    <script type="text/javascript" src="plugins/angular-ui-router/angular-ui-router.js"></script>
+    <!-- END ANGULAR PLUGIN -->
+    
+    <!-- BEGIN ANGULAR APP -->
+       
+        <!-- Plugins -->
+        <script type="text/javascript" src="app/plugins/grid/grid.js"></script>
+       
+        <script type="text/javascript" src="published/js/app.js"></script>
+
+        <!-- Directives -->
+        <script type="text/javascript" src="app/directives/grid/grid.js"></script>
+        
+        <!-- Config -->
+        <script type="text/javascript" src="app/config/config.js"></script>
+
+        <!-- Controller -->
+        <script type="text/javascript" src="app/controllers/header/headerController.js"></script>
+        <script type="text/javascript" src="app/controllers/sidebarLeft/sidebarLeftController.js"></script>
+        <script type="text/javascript" src="app/controllers/sidebarRight/sidebarRightController.js"></script>  
+
+        <script type="text/javascript" src="app/controllers/dashboard/dashboardController.js"></script>
+        <script type="text/javascript" src="app/controllers/email/emailController.js"></script>
+        <script type="text/javascript" src="app/controllers/formsElements/formsElementsController.js"></script>
+        <script type="text/javascript" src="app/controllers/formsValidations/formsValidationsController.js"></script>
+
+
+    <!-- END ANGULAR APP -->
+
+    
+
+</body>

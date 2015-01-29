@@ -1,0 +1,60 @@
+//Extended
+@import "extended/library.less";
+@import "extended/mixins.less";
+@import "extended/utils.less";
+
+
+//Partials 
+@import "partials/header.less";
+@import "partials/sidebar.less";
+@import "partials/page.less";
+
+//+
+@import "bootstrap-overlap.less";
+@import "responsive.less";
+
+//Components
+@import "components/form-elements.less";
+
+
+// Default
+a {
+    .link;
+
+    
+    &:visited {
+        color: @color-link-visited;
+    }
+
+    &:hover {
+
+        .link-hover;
+    }
+            
+}
+
+
+
+// Body
+body {
+    font-family: @font-family-text;
+    font-size: @font-size;
+    font-style: normal;
+    color: @color;
+    height: 100%;
+    background-color:@bg-light-primary;
+}
+
+
+// All Container
+
+.page-container {
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+

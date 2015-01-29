@@ -1,0 +1,125 @@
+@import "../../../css/extended/library.less";
+@import "../../../css/extended/mixins.less";
+
+.grid {
+    
+	clear: both;
+	margin-top: 0;
+	margin-bottom: 25px;
+	padding:0px; 
+    border:none;
+    
+    background-color:#fff;
+    
+  
+    
+
+	// - Simple
+	&.simple {
+		padding:15px 20px;
+	}
+    
+    
+    
+    // - Vertical    
+    &.vertical, &.horizontal {
+        
+        padding:15px;
+        
+        border-style: solid;
+        
+        &.red { border-color:@red; }
+        &.green { border-color:@green}
+        &.blue { border-color:@blue;}
+        &.purple {border-color:@purple;}         
+    }    
+    &.vertical { border-width: 0 0 0 4px; }
+    &.horizontal { border-width: 4px 0 0 0; }
+  
+    
+    // - Solid    
+    &.solid {
+        
+        padding: 15px;
+        
+        &.red { background-color:@red; }
+        &.green { background-color:@green}
+        &.blue { background-color:@blue;}
+        &.purple {background-color:@purple;}  
+        
+        .grid-title, .grid-body{
+             color:#fff;   
+        }
+        
+    
+    }    
+   
+
+    // - Collapsed      
+    &.collapsed {
+        
+         .grid-body, .slimScrollDiv  {
+             overflow: hidden;
+         }
+    }
+        
+    
+        
+    // - Title
+    .grid-title {
+        
+        color:#42494E;
+        margin-bottom: 0;
+        
+        h4 {
+            margin-top: 0px;
+            margin-bottom: 0;
+            cursor:pointer;
+            
+            width:70%;
+            display: inline-block;
+        }
+        
+        
+        .tools {
+            display: inline-block;
+            float: right;
+            
+            
+            .collapse, .reload, .remove {
+                display: inline-block;
+                width: 22px;
+                height: 20px;
+                font-size: 14px;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        
+    }
+    
+    
+    // - Body
+    .grid-body {  
+        color:#42494E;        
+        margin-top: 20px;
+        
+        h1,h2,h3,h4,h5,h6 {
+            margin-top: 0;
+        }
+    }
+    
+    
+    // - Scroll
+    .slimScrollDiv {
+     overflow: visible !important;
+    }
+    
+    
+
+    
+  
+}
+
+
+
